@@ -1,0 +1,49 @@
+-----------------------------------------------------------------------
+
+Spring Boot: Efficient Development, Configuration, and Deployment
+
+-----------------------------------------------------------------------
+
+** Module 1 - Leveraging Initializr and Devtools for Efficient Development **
+
+==============================================================================
+
+## 1 Bootstrapping Project Creation with Spring Initialzr
+
+https://start.spring.io/
+
+Project - Maven Project
+Language - Java
+Spring Boot - 2.3.2
+Project Metadata:
+	Group -  shariq.parwez.io
+	Artifact - just-gif-it
+	Name - just-gif-it
+	Description - Demo project for Spring Boot
+	Package name - shariq.parwez.io
+	Packaging - Jar
+	Java - 8
+Dependencies - Spring Web, Spring Boot Actuator
+
+Click [Generate] > just-gif-it.zip
+
+--------------------------------------------------------------------------------
+
+## 2 Accessing Spring Initialzr from the Command Line with cURL
+
+[TIP] cmd > curl start.spring.io 
+	To see list of all setup and configuration options
+
+1) Create a file (options) with setup values 
+
+dependencies=web,actuator&
+applicationName=JustGifItApplication&
+artifactId=just-gif-it&
+description=just-gif-it&
+groupId=shariq.parwez.io&
+packageName=shariq.parwez.io
+
+2) Open cmd >
+	curl start.spring.io/starter.zip -o demo.zip --data @options
+
+--------------------------------------------------------------------------------
